@@ -4,102 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja Strona</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#services">Usługi</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#pricing">Cennik</a></li>
-                <li><a href="#team">Zespół</a></li>
-            </ul>
-        </nav>
+        <h1>Witaj na Mojej Stronie!</h1>
+        <p>Prosta strona stworzona z HTML, CSS i JS.</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="about">
             <h2>O mnie</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <img src="image.jpg" alt="Moje zdjęcie">
+            <p>Jestem pasjonatem programowania i lubię tworzyć ciekawe projekty!</p>
         </section>
-        <section id="services">
-            <h2>Usługi</h2>
+        <section id="skills">
+            <h2>Umiejętności</h2>
             <ul>
-                <li>Usługa 1</li>
-                <li>Usługa 2</li>
-                <li>Usługa 3</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
             </ul>
-        </section>
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Skontaktuj się ze mną:</p>
-            <form>
-                <input type="text" placeholder="Imię">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Wiadomość"></textarea>
-                <button>Wyślij</button>
-            </form>
         </section>
         <section id="gallery">
             <h2>Galeria</h2>
-            <div class="gallery-container">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
+            <input type="text" id="search" placeholder="Szukaj w galerii...">
+            <div class="gallery" id="galleryContainer">
+                <img src="https://via.placeholder.com/150" alt="Placeholder 1" class="gallery-image">
+                <img src="https://via.placeholder.com/150" alt="Placeholder 2" class="gallery-image">
+                <img src="https://via.placeholder.com/150" alt="Placeholder 3" class="gallery-image">
             </div>
         </section>
-        <section id="blog">
-            <h2>Blog</h2>
-            <article>
-                <h3>Artykuł 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            </article>
-            <article>
-                <h3>Artykuł 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            </article>
-        </section>
-        <section id="pricing">
-            <h2>Cennik</h2>
-            <table>
-                <tr>
-                    <th>Usługa</th>
-                    <th>Cena</th>
-                </tr>
-                <tr>
-                    <td>Usługa 1</td>
-                    <td>100 zł</td>
-                </tr>
-                <tr>
-                    <td>Usługa 2</td>
-                    <td>200 zł</td>
-                </tr>
-                <tr>
-                    <td>Usługa 3</td>
-                    <td>300 zł</td>
-                </tr>
-            </table>
-        </section>
-        <section id="team">
-            <h2>Zespół</h2>
-            <div class="team-container">
-                <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <h3>Jan Kowalski</h3>
-                    <p>Specjalista ds. marketingu</p>
-                </div>
-                <div class="team-member">
-                    <img src="team-member2.jpg" alt="Team Member 2">
-                    <h3>Maria Nowak</h3>
-                    <p>Specjalista ds. grafiki</p>
-                </div>
+        <section id="projects">
+            <h2>Projekty</h2>
+            <div class="project-card">
+                <h3>Projekt 1</h3>
+                <p>Opis projektu 1.</p>
+                <button class="rate-btn" data-project="1">Oceń projekt</button>
+                <div class="rating" id="rating-1">Brak ocen</div>
+            </div>
+            <div class="project-card">
+                <h3>Projekt 2</h3>
+                <p>Opis projektu 2.</p>
+                <button class="rate-btn" data-project="2">Oceń projekt</button>
+                <div class="rating" id="rating-2">Brak ocen</div>
+            </div>
+            <div class="project-card">
+                <h3>Projekt 3</h3>
+                <p>Opis projektu 3.</p>
+                <button class="rate-btn" data-project="3">Oceń projekt</button>
+                <div class="rating" id="rating-3">Brak ocen</div>
             </div>
         </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contactForm">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Wyślij</button>
+            </form>
+            <div id="formResponse"></div>
+        </section>
+        <button id="colorButton">Zmień kolor tła</button>
     </main>
+
+    <!-- Modal do wyświetlania obrazków -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

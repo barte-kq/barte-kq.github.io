@@ -1,81 +1,144 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background: #007BFF;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+nav {
+    background: #333;
 }
 
-nav li {
-    margin-right: 20px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
+    text-align: center;
 }
 
 section {
-    background-color: #fff;
-    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+input {
+    padding: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-h2 {
-    margin-top: 0;
+.project-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    transition: box-shadow 0.2s;
 }
 
-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+.project-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-#kontakt form {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#kontakt input, #kontakt textarea {
+form label {
+    margin-top: 10px;
+}
+
+input, textarea {
     padding: 10px;
-    margin-bottom: 20px;
-    border: none;
+    margin-top: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#kontakt button {
-    background-color: #4CAF50;
-    color: #fff;
+button {
     padding: 10px 20px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    background-color: #28A745;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-#kontakt button:hover {
-    background-color: #3e8e41;
+button:hover {
+    background-color: #218838;
+}
+
+/* Stylizacja modalnego okna */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
