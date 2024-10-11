@@ -1,7 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>adasda.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#omn">O mnie</a></li>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <img src="image.jpg" alt="Moje zdjęcie">
+        </section>
+        <section id="uslugi">
+            <h2>Usługi</h2>
+            <ul>
+                <li>Usługa 1</li>
+                <li>Usługa 2</li>
+                <li>Usługa 3</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się ze mną:</p>
+            <form>
+                <input type="text" placeholder="Imię">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Wiadomość"></textarea>
+                <button>Wyślij</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
