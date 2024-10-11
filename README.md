@@ -1,1 +1,0 @@
-# barte-kq.github.io
