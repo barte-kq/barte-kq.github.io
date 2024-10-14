@@ -1,8 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     font-family: 'Poppins',sans-serif;
+    
 }
 
 
@@ -10,19 +11,15 @@ h3{
     color: #806bcd;
 }
 body{
+    background: linear-gradient(gray,white);
     background-color: #806bcd;
 }
 .container{
-    width: 700px;
-    height: auto;
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin-top: 100px;
     display: flex;
     justify-content: right;
-    background: linear-gradient(white,gray);
+   
 }
 .box{
     width: 400px;
@@ -166,3 +163,35 @@ h3{
     }
     
 }   
+.ikony{
+    border: 5px solid #806bcd;
+    border-radius: 20px;
+    color: #806bcd;
+    margin: 3rem;
+    margin-top: 100px;
+    display: flex;
+    
+    justify-content: center;
+
+    
+}
+
+.zdj{
+    margin-left: 400px;
+}
+.zdj:hover{
+   
+    color: gray ;
+}
+img{
+    width: 100px;
+    height: 100px;
+
+}
+.container>img{
+    margin: 3rem ;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 700px;
+    height: 500px;
+}
