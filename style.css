@@ -20,7 +20,7 @@ body{
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: right;
-    background-image: url(pobrane\ \(2\).jfif);
+    background: linear-gradient(white,gray);
 }
 .box{
     width: 400px;
@@ -162,4 +162,5 @@ h3{
     100%{
         transform: scale(1);
     }
+    
 }   
