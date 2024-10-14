@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+
+
 h3{
     color: #806bcd;
 }
@@ -27,7 +29,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     float: left;
 }
