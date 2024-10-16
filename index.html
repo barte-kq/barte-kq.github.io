@@ -72,5 +72,32 @@
       <img src="3.png" alt="" class="zdj">
     
     </div>
+    <div class="containerr">
+      <div class="image-container">
+        <div class="image"><img src="1.webp" alt="" /></div>
+        <div class="image"><img src="2.jfif" alt="" /></div>
+        <div class="image"><img src="3.jfif" alt="" /></div>
+        <div class="image"><img src="4.jfif" alt="" /></div>
+        
+      </div>
+
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="" alt="" />
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".image img").forEach(image => {
+        image.onclick = () => {
+          document.querySelector(".popup-image").style.display = "block";
+          document.querySelector(".popup-image img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-image span").onclick = () => {
+        document.querySelector(".popup-image").style.display = "none";
+      };
+    </script>
 </body>
 </html>

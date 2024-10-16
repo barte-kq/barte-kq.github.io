@@ -11,7 +11,7 @@ h3{
     color: #806bcd;
 }
 body{
-    background: linear-gradient(gray,white);
+    
     background-color: #806bcd;
 }
 .container{
@@ -195,3 +195,74 @@ img{
     width: 700px;
     height: 500px;
 }
+.containerr {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+  }
+
+  .containerr .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .containerr .image-container .image {
+    height: 250px;
+    width: 350px;
+    border: 10px solid white;
+    box-shadow: 0 5px 15px black;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .containerr .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+  }
+  .containerr .image-container .image:hover img {
+    transform: scale(1.1);
+  }
+
+  .containerr .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+  }
+  .containerr .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .containerr .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+    height: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .containerr .popup-image img {
+      width: 95%;
+    }
+  }
