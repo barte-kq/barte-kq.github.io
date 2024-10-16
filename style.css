@@ -204,7 +204,7 @@ img{
   .containerr .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 50px;
     justify-content: center;
     padding: 10px;
   }
