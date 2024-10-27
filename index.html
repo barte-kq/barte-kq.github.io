@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ai.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Prosta Strona</title>
 </head>
 <body>
     <div class="container">
         <h1>Witaj na mojej stronie!</h1>
         <p>Ta strona demonstruje proste elementy HTML, CSS i JavaScript.</p>
+        
         <button id="colorButton">Zmień kolor tła</button>
         <div class="color-buttons">
             <button class="preset-color" style="background-color: red;">Czerwony</button>
@@ -17,6 +18,7 @@
             <button class="preset-color" style="background-color: blue;">Niebieski</button>
             <button id="imageBackgroundButton">Zmień tło na obrazek</button>
         </div>
+
         <h2>Formularz kontaktowy</h2>
         <form id="contactForm">
             <input type="text" id="name" placeholder="Imię" required>
@@ -25,8 +27,31 @@
             <button type="submit">Wyślij</button>
         </form>
         <div id="confirmationMessage" class="hidden"></div>
+
+        <h2>Opinie użytkowników</h2>
+        <form id="feedbackForm">
+            <input type="text" id="userName" placeholder="Twoje imię" required>
+            <textarea id="userFeedback" placeholder="Twoja opinia" required></textarea>
+            <button type="submit">Dodaj opinię</button>
+        </form>
+        <div id="feedbackList"></div>
+
+        <h2>Galeria zdjęć</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Obraz 1">
+            <img src="image2.jpg" alt="Obraz 2">
+            <img src="image3.jpg" alt="Obraz 3">
+        </div>
+
         <h2>O autorze</h2>
         <p>Strona stworzona przez [Twoje Imię]. Pasjonat programowania i technologii webowych.</p>
+
+        <h2>Znajdź mnie w mediach społecznościowych</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

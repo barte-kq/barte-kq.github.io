@@ -25,7 +25,6 @@ document.getElementById('imageBackgroundButton').addEventListener('click', funct
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Zapobiega przeładowaniu strony
 
-    // Walidacja formularza
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
@@ -35,11 +34,33 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         return;
     }
 
-    // Potwierdzenie wysłania formularza
     document.getElementById('confirmationMessage').innerText = "Dziękujemy za kontakt, " + name + "! Twoja wiadomość została wysłana.";
     document.getElementById('confirmationMessage').classList.remove('hidden');
-
-    // Można dodać tutaj logikę do wysyłania danych, np. do serwera
-    // Resetowanie formularza
     document.getElementById('contactForm').reset();
+});
+
+// Obsługa formularza opinii
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Zapobiega przeładowaniu strony
+
+    const userName = document.getElementById('userName').value.trim();
+    const userFeedback = document.getElementById('userFeedback').value.trim();
+
+    if (!userName || !userFeedback) {
+        alert("Proszę wypełnić wszystkie pola!");
+        return;
+    }
+
+    const feedback = document.getElementById('feedbackList');
+    
+    // Tworzenie nowego elementu opinii
+    const feedbackItem = document.createElement('div');
+    feedbackItem.classList.add('feedback-item');
+    feedbackItem.innerHTML = `<strong>${userName}</strong>: ${userFeedback}`;
+    
+    // Dodanie opinii do listy
+    feedbackList.appendChild(feedbackItem);
+    
+    // Resetowanie formularza
+    document.getElementById('feedbackForm').reset();
 });
