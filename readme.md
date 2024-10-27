@@ -1,1 +1,1 @@
-Blackbox AI
+Blackbox AI to proste narzędzie które możemy używać nawet jako rozszerzenia do vs code więc jest ono łatwo i wygodnie dostępne. Sztuczna inteligencja pomaga nam tu w pisaniu kodu jak i może ona za nas to zrobić co może być przydatne.
